@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Exercicio">
+  <ClassDiagramComponents>
+    <Class name="Exercicio" package="exercicio" visibility="public" xPosition="269.0" yPosition="441.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Figura" package="com.sumare.figuras" visibility="public" isAbstract="true" xPosition="176.0" yPosition="28.0">
+      <Fields>
+        <Field name="x" type="int" visibility="private"/>
+        <Field name="y" type="int" visibility="private"/>
+        <Field name="none" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getArea" returnType="int" visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+        </Method>
+        <Method name="getPerimetro" returnType="int" visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+        </Method>
+        <Method name="getNome" returnType="String" visibility="public">
+          <Argument type="String" name="n"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Retangulo" package="com.sumare.figuras" visibility="public" xPosition="128.0" yPosition="308.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Quadrado" package="com.sumare.figuras" visibility="public" xPosition="398.0" yPosition="308.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="com.sumare.figuras.Retangulo" target="com.sumare.figuras.Figura"/>
+    <IsRelation name="is" source="com.sumare.figuras.Quadrado" target="com.sumare.figuras.Figura"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
